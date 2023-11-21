@@ -15,14 +15,14 @@
 	$subject = stripslashes( nl2br( $_POST['subject'] ) );
 	$message = stripslashes( nl2br( $_POST['message'] ) );
 	
-	$headers ="From: Form Contact <$from>\n";
+	$headers ="From: Mensaje desde el formulario <$from>\n";
 	$headers.="MIME-Version: 1.0\n";
 	$headers.="Content-type: text/html; charset=iso 8859-1";
 	
 	ob_start();
 	?>
-		Hi imransdesign!<br /><br />
-		<?php echo ucfirst( $name ); ?>  has sent you a message via contact form on your website!
+		Hola, Sebastián<br /><br />
+		<?php echo ucfirst( $name ); ?>  ha enviado una consulta desde el sitio web!
 		<br /><br />
 		
 		Name: <?php echo ucfirst( $name ); ?><br />
@@ -38,14 +38,14 @@
 	$body = ob_get_contents();
 	ob_end_clean();
 	
-	$to = 'support@fruitkha.com';
+	$to = 'ventas@oxipal.com';
 
 	$s = mail($to,$subject,$body,$headers,"-t -i -f $from");
 
 	if( $s == 1 ){
-		echo '<div class="success"><i class="fas fa-check-circle"></i><h3>Thank You!</h3>Your message has been sent successfully.</div>';
+		echo '<div class="success"><i class="fas fa-check-circle"></i><h3>¡Muchas gracias!</h3>Hemos recibido tu mensaje correctamente.</div>';
 	}else{
-		echo '<div>Your message sending failed!</div>';
+		echo '<div>Error en el sistema. No pudimos recibir tu mensaje. Por favor comunicate al </div>';
 	}
 
 	
