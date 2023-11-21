@@ -1331,9 +1331,12 @@ a.mobile-show.search-bar-icon:hover {
 }
 
 /* Cambiar la imagen de fondo en pantallas "sm" */
-@media (max-width: 700px) {
+@media (max-width: 576px) {
   .hero-bg {
     background-image: url(../img/fondomobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 }
 
