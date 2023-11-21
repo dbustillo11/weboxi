@@ -1336,7 +1336,9 @@ a.mobile-show.search-bar-icon:hover {
     background-image: url(../img/fondomobile.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: bottom;
+    background-attachment: scroll;
+
   }
 }
 
