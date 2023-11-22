@@ -398,7 +398,7 @@ a.read-more-btn:hover {
 
 a.boxed-btn, a.bordered-btn, a.cart-btn {
   border-radius: 50px;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .section-title h3 {
@@ -2496,6 +2496,7 @@ p.single-product-pricing span {
   font-size: 15px;
   color: #555;
   line-height: 1.8;
+  text-align: justify;
 }
 
 .single-product-content p.single-product-pricing {
