@@ -30,6 +30,7 @@ body {
 
 body img {
   max-width: 100%;
+  margin-bottom: 10px;
 }
 
 a {
@@ -70,6 +71,17 @@ h1, .h1 {
   font-size: 4rem;
   font-weight: 700;
   line-height: 4rem;
+}
+
+.img-zoom {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Sombreado más suave */
+  margin: 0;
+  transition: all 0.3s ease-in-out; /* Transición suave de 0.3 segundos */
+  transform: scale(1); /* Escala inicial (sin zoom) */
+}
+
+.img-zoom:hover {
+  transform: scale(1.02); /* Zoom al hacer hover (ajusta el valor según lo desees) */
 }
 
 @media only screen and (max-width: 767.96px) {
@@ -1536,6 +1548,20 @@ div.owl-controls, .owl-controls div {
   flex-direction: column;   /* Alinea los elementos verticalmente */
   align-items: center;      /* Centra los elementos horizontalmente */
   text-align: center;       /* Centra el texto */
+  padding: 10%;
+  background-color: rgba(253, 253, 253, 0.5); /* Color de fondo con opacidad 60% */
+  border-radius: 48px; /* Bordes redondeados */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Sombra inicial */
+  margin: 0; /* Elimina el margen por defecto */
+  transition: all 0.3s ease-in-out; /* Agrega una transición suave para todos los cambios */
+  height: 100%;
+}
+
+.list-box:hover {
+  box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.1); /* Sombra en hover */
+  background-color: rgba(253, 253, 253, 0.8); /* Color de fondo con opacidad 80% en hover */
+  transform: scale(1.05); /* Aumenta el tamaño en hover */
+  border-radius: 48px 5px; /* Bordes redondeados */
 }
 
 .list-box .content h3 {
@@ -1690,17 +1716,18 @@ p.excerpt {
   margin-bottom: 20px;
 }
 
-.single-article-text h2 {
-  font-size: 20px;
+.single-article-text h3 {
+  font-size: 40px;
   font-weight: 600;
   line-height: 1.4;
-  margin-bottom: 10px;
+  margin: 10px
 }
 
 .single-article-text p {
   font-size: 20px;
   line-height: 1.6;
   color: #1F2A1C;
+  text-align: justify;
 }
 
 .comments-list-wrap {
@@ -2092,6 +2119,18 @@ a.video-play-btn {
   margin-bottom: 0;
 }
 
+.quote {
+  text-align: center;
+  transition: all 0.3s ease-in-out; /* Agrega una transición suave para todos los cambios */
+}
+
+.quote:hover {
+  transform: scale(1.05); /* Aumenta el tamaño en hover */
+}
+
+
+
+
 /* -----------------------------------------------------------------------------
 
 # Shop Banner Styles
@@ -2184,10 +2223,16 @@ a.video-play-btn {
   content: "";
   background-size: cover;
   background-position: center;
-  border-top-left-radius: 5px;
+  border-radius:  5px;
   -webkit-box-shadow: 0 0 20px #cacaca;
   box-shadow: 0 0 20px #cacaca;
-  border-bottom-left-radius: 5px;
+  transition: width 0.9s ease-in-out; /* Agregar transición para animar el cambio de ancho */
+
+}
+
+/* Agregar regla de estilo para el hover */
+.feature-bg:hover::after {
+  width: 41%; /* Cambiar el ancho al 100% al hacer hover */
 }
 
 .team-bg-1 {
