@@ -2067,6 +2067,15 @@ span.comment-date {
 
 /* -----------------------------------------------------------------------------
 
+# Paneles styles
+
+----------------------------------------------------------------------------- */
+
+
+
+
+/* -----------------------------------------------------------------------------
+
 # Testimonial Styles
 
 ----------------------------------------------------------------------------- */
@@ -2278,6 +2287,28 @@ a.video-play-btn {
 
 .feature-bg:after {
   background-image: url(../img/feature-bg.jpg);
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40%;
+  height: 100%;
+  content: "";
+  background-size: cover;
+  background-position: center;
+  border-radius:  5px;
+  -webkit-box-shadow: 0 0 20px #cacaca;
+  box-shadow: 0 0 20px #cacaca;
+  transition: width 0.9s ease-in-out; /* Agregar transición para animar el cambio de ancho */
+
+}
+
+.paneles-bg {
+  position: relative;
+  margin: 150px 0;
+}
+
+.paneles-bg:after {
+  background-image: url(../img/wframe-bg.jpg);
   position: absolute;
   right: 0;
   top: 0;
@@ -2538,7 +2569,7 @@ ul.social-link-team li a {
 
 .product-image img {
   width: 90%;
-  border-radius: 14px;
+  border-radius: 4px;
   margin-bottom: 20px;
   margin-top: 18px;
 }
