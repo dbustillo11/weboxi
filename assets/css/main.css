@@ -452,6 +452,17 @@ a.boxed-btn, a.bordered-btn, a.cart-btn {
   background-image: url(../img/breadcrumb-bg.jpg);
 }
 
+@media (max-width: 720px) {
+  .breadcrumb-bg {
+    background-image: url(../img/fondomobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: scroll;
+
+  }
+}
+
 .breadcrumb-text p {
   color: #378E30;
   font-weight: 700;
@@ -1330,6 +1341,47 @@ a.mobile-show.search-bar-icon:hover {
   color: #378E30;
 }
 
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+  font-size: 16px;
+}
+
+.table-bordered {
+  border: 1px solid #dee2e6;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody + tbody {
+  border-top: 2px solid #dee2e6;
+}
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+@media (max-width: 767.98px) {
+  .table-responsive {
+      overflow-x: scroll;
+  }
+}
+
 /* -----------------------------------------------------------------------------
 
 # Hero Styles
@@ -1900,6 +1952,12 @@ span.comment-date {
   margin-bottom: 10px;
   margin-right: 5px;
 }
+
+.benefit-list li {
+  font-size: 18px; /* Tamaño de la fuente */
+  margin-bottom: 44px; /* Espaciado entre los elementos de la lista */
+}
+
 
 /* -----------------------------------------------------------------------------
 
