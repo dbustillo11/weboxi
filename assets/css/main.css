@@ -402,7 +402,11 @@ a.read-more-btn {
   -o-transition: 0.3s;
   transition: 0.3s;
   font-weight: 700;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 5%;
 }
+
 
 a.read-more-btn:hover {
   color: #378E30;
@@ -1712,6 +1716,7 @@ p.blog-meta span i {
 p.excerpt {
   line-height: 1.8;
   color: #555;
+  text-align: justify;
 }
 
 .latest-news a.boxed-btn {
