@@ -2893,7 +2893,7 @@ table.order-details tbody td {
 .single-product-item {
   -webkit-box-shadow: 0 0 20px #e4e4e4;
   box-shadow: 0 0 20px #e4e4e4;
-  padding-bottom: 50px;
+  padding: 12px 0px 50px 0px;
 }
 
 /* -----------------------------------------------------------------------------
