@@ -1,4 +1,5 @@
 
+
 html {
   font-size: 14px;
   font-weight: 400;
@@ -1587,6 +1588,17 @@ div.owl-controls, .owl-controls div {
   background-color: #f5f5f5;
 }
 
+.list-unstyled {
+  font-size: 18px;
+      font-size: 20px;
+    width: 100%;
+    margin: 0 auto;
+    color: #2d2d2d;
+    margin-top: 10px;
+    line-height: 1.8;
+
+}
+
 .list-box {
   overflow: hidden;
   letter-spacing: 0.5px;
@@ -1605,11 +1617,44 @@ div.owl-controls, .owl-controls div {
 
 }
 
+.list-box-2 {
+  overflow: hidden;
+  letter-spacing: 0.5px;
+  display: flex;            /* Agregado flexbox */
+  flex-direction: column;   /* Alinea los elementos verticalmente */
+  align-items: center;      /* Centra los elementos horizontalmente */
+  text-align: center;       /* Centra el texto */
+  padding: 3%;
+  background-color: rgba(253, 253, 253, 0.5); /* Color de fondo con opacidad 60% */
+  border-radius: 48px; /* Bordes redondeados */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Sombra inicial */
+  margin: 0; /* Elimina el margen por defecto */
+  transition: all 0.3s ease-in-out; /* Agrega una transición suave para todos los cambios */
+  height: 100%;
+  transform: scale(0.9); /* Aumenta el tamaño en hover */
+
+}
+
+
+
 .list-box:hover {
   box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.1); /* Sombra en hover */
   background-color: rgba(253, 253, 253, 0.8); /* Color de fondo con opacidad 80% en hover */
   transform: scale(1.0); /* Aumenta el tamaño en hover */
   border-radius: 48px 5px; /* Bordes redondeados */
+}
+
+.list-box-2:hover {
+  box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.1); /* Sombra en hover */
+  background-color: rgba(253, 253, 253, 0.8); /* Color de fondo con opacidad 80% en hover */
+  transform: scale(1.0); /* Aumenta el tamaño en hover */
+  border-radius: 48px 5px; /* Bordes redondeados */
+}
+
+.list-box-2 img {
+  border-radius: 3%;
+  margin-top: 6%;
+  margin-bottom: 3%;
 }
 
 .list-box .content h3 {
