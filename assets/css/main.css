@@ -1,7 +1,7 @@
 
 
 html {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 28px;
   height: 100%;
@@ -10,7 +10,7 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 0.1px;
   line-height: 1.8;
   color: #1F2A1C;
@@ -57,9 +57,9 @@ h6:last-child, .h6:last-child {
 }
 
 h1, .h1 {
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 700;
-  line-height: 4rem;
+  line-height: 2rem;
 }
 
 .img-zoom {
@@ -400,6 +400,9 @@ a.read-more-btn {
   margin-bottom: 5%;
 }
 
+.mb-4, .my-4 {
+  font-size: 18px;
+}
 
 a.read-more-btn:hover {
   color: #378E30;
@@ -407,7 +410,7 @@ a.read-more-btn:hover {
 
 a.boxed-btn, a.bordered-btn, a.cart-btn {
   border-radius: 50px;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .section-title h3 {
@@ -431,6 +434,8 @@ a.boxed-btn, a.bordered-btn, a.cart-btn {
   font-weight: 700;
 
 }
+
+
 
 .section-title p {
   font-size: 20px;
@@ -1439,7 +1444,7 @@ html, body {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 7px;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .hero-text h1 {
@@ -1496,7 +1501,7 @@ input[type="submit"] {
   color: #1F2A1C;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 18px;
   border: none !important;
   cursor: pointer;
   padding: 15px 25px;
@@ -1823,7 +1828,7 @@ p.excerpt {
 }
 
 .single-article-text p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.6;
   color: #1F2A1C;
   text-align: justify;
@@ -2218,7 +2223,7 @@ a.video-play-btn {
 }
 
 .abt-text p {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.6;
   margin-bottom: 10px;
   text-align: justify;
@@ -2456,7 +2461,7 @@ ul.social-link-team li a {
 }
 
 .form-title p {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.8;
 }
 
