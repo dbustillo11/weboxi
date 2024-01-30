@@ -47,6 +47,17 @@ h6, .h6 {
   color: #1F2A1C;
 }
 
+.small-carousel {
+  max-width: 70%; /* Ajusta el ancho máximo del carrusel según tus necesidades */
+  margin: 0 auto; /* Centra el carrusel horizontalmente */
+}
+
+.small-carousel .carousel-inner img {
+  max-height: 70%; /* Ajusta la altura máxima de las imágenes en el carrusel */
+  width: auto;
+  margin: 0 auto;
+}
+
 h1:last-child, .h1:last-child,
 h2:last-child, .h2:last-child,
 h3:last-child, .h3:last-child,
@@ -447,7 +458,7 @@ a.boxed-btn, a.bordered-btn, a.cart-btn {
 }
 
 .section-title {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 .breadcrumb-bg {
@@ -1662,8 +1673,12 @@ div.owl-controls, .owl-controls div {
   border-radius: 3%;
   margin-top: 6%;
   margin-bottom: 3%;
+  transition: border-radius 0.3s; /* Agregar transición para suavizar el cambio */
 }
 
+.list-box-2 img:hover {
+  border-radius: 6%; /* Cambiar el radio de borde al pasar el mouse sobre la imagen */
+}
 .list-box .content h3 {
   display: block;
   line-height: 22px;
