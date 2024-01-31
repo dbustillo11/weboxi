@@ -58,6 +58,18 @@ h6, .h6 {
   margin: 0 auto;
 }
 
+/* Estilo para dispositivos móviles */
+@media (max-width: 768px) {
+  .small-carousel {
+    max-width: 96%; /* Ajusta el ancho máximo del carrusel para móviles al 90% */
+  }
+
+  .small-carousel .carousel-inner img {
+    max-height: 96%; /* Ajusta la altura máxima de las imágenes en el carrusel para móviles al 90% */
+  }
+}
+
+
 h1:last-child, .h1:last-child,
 h2:last-child, .h2:last-child,
 h3:last-child, .h3:last-child,
